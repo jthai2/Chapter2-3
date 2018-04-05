@@ -1,9 +1,8 @@
-//SwatTheBugs
+//SwatTheBug
 //04/5/2018
-//Jimmy Thai
+//Jimmy Thai 
 
 #include <iostream>
-#include <string>>
 using namespace std;
 
 int main()
@@ -15,7 +14,7 @@ int main()
 	temp = temp + 1.5;
 
 		//display variable's value
-		cout << "After adding 1.5, the temp variable now contains " << temp << "." << std::endl;
+		cout << "After adding 1.5, the temp variable now contains " << temp << "." << endl;
 
 	system("pause");
 	return 0;
