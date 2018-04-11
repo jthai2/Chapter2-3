@@ -3,22 +3,18 @@
 //Jimmy Thai
 
 #include <iostream>
-#include <string>
 
 int main()
 {
 	double weeklyGrossPay;
-	double weeklyNetPay;
-
-	std::cout << "What is your weekly gross pay?" << std::endl;
+	double afterTax;
+	
+	std::cout << "Enter employees weekly gross pay>>>" << std::endl;
 	std::cin >> weeklyGrossPay;
-
-	double FWT = weeklyGrossPay * .20;
-	double FWT2 = weeklyGrossPay - FWT;
-	double FICA = FWT2 * .8;
-	double FICA2 = FWT2 - FICA;
-	double stateIncome = FICA2 * .4;
-	double stateIncome2 = stateIncome - 
+	
+	afterTax = weeklyGrossPay - ( (weeklyGrossPay / 100) * 32 );
+	
+	std::cout << "Your employee will now make $" << afterTax << ", after tax." << std::endl;
 
 	system("pause");
 	return 0;
